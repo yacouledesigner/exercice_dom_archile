@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/281fdcdacd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container--left">
+
+            <!-- bloc d'image 1-->
+            <div class="first--bloc">
+                <span class="paners" id="show1">1</span>
+                <div class="image">
+                    <div class="photo">
+                        <img src="fauteuil.png" alt="">
+                    </div>
+                    <p><span id="price1">10000</span> FCFA</p>
+                </div>
+                <div class="btn">
+                    <div class="btn--plus" >
+                        <i class="fa-solid fa-plus" id="add1" onclick='augmenter("show1","price1")'></i>
+                    </div>
+                    <div class="btn--panier">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn--moins">
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <button>J'achète</button>
+                </div>
+            </div>
+
+            <!-- bloc d'image 2-->
+            <div class="second--bloc">
+                <span class="paners" id="show2">1</span>
+                <div class="image">
+                    <div class="photo">
+                        <img src="fauteuil-2.png" alt="">
+                    </div>
+                    <p><span id="price2">20000</span> FCFA</p>
+                </div>
+                <div class="btn">
+                    <div class="btn--plus">
+                        <i class="fa-solid fa-plus" id="add2" onclick='augmenter("show2","price2")'></i>
+                    </div>
+                    <div class="btn--panier">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn--moins">
+                        <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <button>J'achète</button>
+                </div>
+            </div>
+
+
+            <!-- bloc d'image 3-->
+            <div class="third--bloc">
+                <span class="paners" id="show3">1</span>
+                <div class="image">
+                    <div class="photo">
+                        <img src="fauteuil-3.png" alt="">
+                    </div>
+                    <p><span id="price3">35000</span> FCFA</p>
+                </div>
+                <div class="btn">
+                    <div class="btn--plus">
+                        <i class="fa-solid fa-plus" id="add3" onclick='augmenter("show3","price3")'></i>
+                    </div>
+                    <div class="btn--panier">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn--moins">
+                        <i class="fa-solid fa-minus" onclick='diminuer("show3","price3")'></i>
+                    </div>
+                    <button>J'achète</button>
+                </div>
+            </div>
+        </div>
+
+<!-- bloc de droite -->
+
+        <div class="container--right">
+            <div class="product--information">
+                <div class="image--min">
+                    <img src="fauteuil.png" alt="">
+                </div>
+                <div class="information">
+                    <h5>Fauteuil Merveille Salon</h5>
+                    <p>Lorem ipsum dolor sit.</p>
+                    <div class="quantité">
+                        <h5>Quantité</h5>
+                        <div><span>1</span></div>
+                        <div class="remove"><i class="fa-solid fa-trash-can"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="black">
+                <img src="femme.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <script src="dom.js"></script>
+</body>
+</html>
